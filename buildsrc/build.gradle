@@ -1,0 +1,41 @@
+apply plugin: 'groovy'
+
+dependencies {
+    compile gradleApi()//gradle sdk
+    compile localGroovy()//groovy sdk
+    compile 'com.android.tools.build:gradle:2.3.0'
+    compile 'org.javassist:javassist:3.20.0-GA'
+}
+
+repositories {
+    jcenter()
+}
+
+//class Addrress{
+//    String ipconfig = null;
+//}
+//
+//class AddressExtends implements Plugin<Project> {
+//
+//    /**
+//     * Apply this plugin to the given target object.
+//     *
+//     * @param target The target object
+//     */
+//    @Override
+//    void apply(Project project) {
+//
+//        project.extensions.create("ipad",Addrress)
+//
+//        project.task("readExtension") << {
+//            println "ip_address:" + project['ipad'].ipconfig
+//        }
+//
+//    }
+//}
+//
+//apply plugin: AddressExtends
+//
+//ipad{
+//    ipconfig "192.168.0.1"
+//}
